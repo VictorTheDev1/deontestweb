@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photography Portfolio — Joshua Bell</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0f1213" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">DEON HOLLEY</a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#pages">Pages</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="btn btn-outline" id="bookBtn">Book Now</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+ <!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-flex">
+    <div class="hero-left">
+      <img src="/images/img0001.jpg" alt="Photographer Joshua Bell" />
+    </div>
+
+    <div class="hero-right">
+      <h1 class="hello">HELLO!</h1>
+      <h2 class="name">I'M JOSHUA BELL</h2>
+      <p class="lead">
+        I'm a freelance photographer based in London who specialises in people and portrait photography.
+        I love putting ideas into beautiful pictures, and I want to help you do the same.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" id="contactBtn">Contact Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- FILTERS -->
+<section id="portfolio" class="portfolio-section container">
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="portrait">Portrait</button>
+    <button class="filter" data-filter="abstract">Abstract</button>
+    <button class="filter" data-filter="wedding">Wedding</button>
+    <button class="filter" data-filter="nature">Nature</button>
+  </div>
+
+  <!-- Masonry gallery using local images img1 - img20 -->
+  <div id="gallery" class="gallery">
+    <div class="item" data-category="portrait"><img src="/images/img1.jpg" alt="Portrait 1"></div>
+    <div class="item" data-category="portrait"><img src="/images/img2.jpg" alt="Portrait 2"></div>
+    <div class="item" data-category="abstract"><img src="/images/img3.jpg" alt="Abstract 1"></div>
+    <div class="item" data-category="portrait"><img src="/images/img4.jpg" alt="Portrait 3"></div>
+    <div class="item" data-category="wedding"><img src="/images/img5.jpg" alt="Wedding 1"></div>
+    <div class="item" data-category="nature"><img src="/images/img6.jpg" alt="Nature 1"></div>
+    <div class="item" data-category="abstract"><img src="/images/img7.jpg" alt="Abstract 2"></div>
+    <div class="item" data-category="nature"><img src="/images/img8.jpg" alt="Nature 2"></div>
+    <div class="item" data-category="wedding"><img src="/images/img9.jpg" alt="Wedding 2"></div>
+    <div class="item" data-category="portrait"><img src="/images/img10.jpg" alt="Portrait 4"></div>
+    <div class="item" data-category="abstract"><img src="/images/img11.jpg" alt="Abstract 3"></div>
+    <div class="item" data-category="portrait"><img src="/images/img12.jpg" alt="Portrait 5"></div>
+    <div class="item" data-category="nature"><img src="/images/img13.jpg" alt="Nature 3"></div>
+    <div class="item" data-category="wedding"><img src="/images/img14.jpg" alt="Wedding 3"></div>
+    <div class="item" data-category="portrait"><img src="/images/img15.jpg" alt="Portrait 6"></div>
+    <div class="item" data-category="abstract"><img src="/images/img16.jpg" alt="Abstract 4"></div>
+    <div class="item" data-category="nature"><img src="/images/img17.jpg" alt="Nature 4"></div>
+    <div class="item" data-category="portrait"><img src="/images/img18.jpg" alt="Portrait 7"></div>
+    <div class="item" data-category="abstract"><img src="/images/img19.jpg" alt="Abstract 5"></div>
+    <div class="item" data-category="wedding"><img src="/images/img20.jpg" alt="Wedding 4"></div>
+  </div>
+</section>
+
+
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Joshua Bell — All rights reserved</div>
+      <div class="footer-links">
+        <a href="mailto:hello@iconi.example">hello@iconi.example</a>
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div id="contactModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Contact form">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <h3>Contact Me</h3>
+      <p class="muted">Tell me about your project. I’ll get back to you within 24 hours.</p>
+      <form id="contactForm" action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+        <!-- formsubmit endpoint is an example; change to yours -->
+        <input type="hidden" name="_subject" value="Portfolio Contact" />
+        <label>
+          Name
+          <input required name="name" type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input required name="email" type="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Message
+          <textarea required name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary full">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
