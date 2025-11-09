@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Baskervville:ital,wght@0,400..700;1,400..700&family=LXGW+Marker+Gothic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ 
 :root{
   --bg:#0b0c0d;
   --card:#0f1213;
@@ -18,6 +21,18 @@ body{
   -moz-osx-font-smoothing:grayscale;
   line-height:1.45;
   font-size:16px;
+   animation: fadeInUp 1s ease-out forwards;
+  transform: translateY(20px);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* container */
@@ -155,10 +170,17 @@ body{
 }
 
 .hero-right .lead {
-  line-height: 1.7;
-  color: #ccc;
-  max-width: 550px;
-  margin-bottom: 25px;
+
+color: #ccc;
+font-family: ubuntu;
+max-width: 550px;
+margin-bottom: 25px;
+
+font-weight: 100;
+}
+.hero-right .lead p {
+
+
 }
 .hero-left img {
   width: 299px; /* smaller image */
@@ -192,12 +214,14 @@ body{
 
     .hero-left img {
     width: 70%;
-    margin-left: -30px;
+    margin-left: 0px;
+    margin-top: 15px;
   }
 
 
-  .hero-right .name {
+ .hero-right .name {
     font-size: 36px;
+    margin-bottom: -10px;
   }
   .hero-right .hello {
   color: #d4af37;
@@ -205,8 +229,31 @@ body{
   margin-bottom: -40px;
   font-size: 46px;
   font-weight: 30;
+    margin-top: -30px;
 }
+.hero-right .lead {
 
+color: #ccc;
+font-family: ubuntu;
+max-width: 550px;
+margin-bottom: 25px;
+padding: 10px 10px;
+font-size: 17px;
+font-weight: 100;
+}
+.btn-primary {
+    background-color: rgb(212, 175, 55);
+    border: none;
+    color: rgb(0 0 0);
+    padding: 17px 49px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.3s;
+    margin-top: -20px;
+    font-size: 20px;
+    font-family: Lxgw marker gothic;
+}
 }
 
 /* Portfolio section */
@@ -273,7 +320,7 @@ body{
 @media (max-width:880px){
   .gallery{column-count:2}
   .main-nav{display:none}
-  .hamburger{display:flex}
+  .hamburger{display:flex;flex-wrap: wrap;align-content: center;}
   .brand{font-size:17px}
 }
 @media (max-width:520px){
