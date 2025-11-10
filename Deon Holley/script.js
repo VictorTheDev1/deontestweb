@@ -1,3 +1,5 @@
+    document.getElementById("year").textContent = new Date().getFullYear();
+
 // Basic interactivity: hamburger, filters, modal, simple accessibility
 
 const hamburger = document.getElementById('hamburger');

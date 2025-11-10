@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="shortcut icon" href="images/ico2.svg" type="image/x-icon">
   <title>Deon Holley</title>
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
   <meta name="theme-color" content="#0f1213" />
 </head>
@@ -18,8 +18,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#workshops">Workshops</a></li>
-          <li><a href="#pages">Pages</a></li>
+          <li><a href="#socialmedia">Social Media</a></li>
         </ul>
       </nav>
 
@@ -93,23 +92,74 @@
 
 
 
-  <section id="Services" class="hero1">
-     
-</section>
+   <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title1">My <span>Services</span></h2>
+      <p class="section-subtitle">
+        We make your <span>Business</span> better through technology.
+      </p>
 
-  <footer class="site-footer container">
-    <div class="footer-inner">
-      <div>© <span id="year"></span> Joshua Bell — All rights reserved</div>
-      <div class="footer-links">
-        <a href="mailto:hello@iconi.example">hello@iconi.example</a>
-        <a href="#">Instagram</a>
-        <a href="#">Behance</a>
+      <div class="services-grid">
+        <div class="service-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Cyber Security</h3>
+          <p>Protecting your business and data with advanced security solutions.</p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-comments"></i>
+          <h3>IT Consultancy</h3>
+          <p>Professional advice to guide your business toward digital growth.</p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud Computing</h3>
+          <p>Scalable and secure cloud solutions for seamless collaboration.</p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Software Development</h3>
+          <p>Custom software designed to fit your business needs perfectly.</p>
+        </div>
+
       </div>
     </div>
+  </section>
 
+   <footer class="footer">
+    <div class="footer-container">
+      <h1 class="logo">DEON HOLLEY</h1>
 
-    
+      <nav class="footer-nav">
+         <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Copyright</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+     
+      <!-- 🌍 Location Section -->
+      <div class="location">
+       Baltimore, Maryland, USA
+      </div>
+
+      <p class="copyright">
+        Copyright &copy; <span id="year"></span>  Victor-codees. All rights reserved.
+      </p>
+    </div>
   </footer>
+
+  
 
 
   <!-- CONTACT MODAL -->
@@ -119,7 +169,7 @@
       <button class="modal-close" id="closeModal" aria-label="Close">×</button>
       <h3>Contact Me</h3>
       <p class="muted">Tell me about your project. I’ll get back to you within 24 hours.</p>
-      <form id="contactForm" action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+      <form id="contactForm" action="https://formsubmit.co/moradeyovictor@gmail.com" method="POST" class="contact-form">
         <!-- formsubmit endpoint is an example; change to yours -->
         <input type="hidden" name="_subject" value="Portfolio Contact" />
         <label>
