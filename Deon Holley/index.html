@@ -42,7 +42,7 @@
       <h1 class="hello">HELLO!</h1>
       <h2 class="name">I'M DEON HOLLEY</h2>
       <p class="lead">
-        I'm a freelance photographer based in London who specialises in people and portrait photography.
+        I'm a freelance photographer based in Baltimore who specialises in people and portrait photography.
         I love putting ideas into beautiful pictures, and I want to help you do the same.
       </p>
       <div class="hero-cta">
@@ -101,27 +101,23 @@
 
       <div class="services-grid">
         <div class="service-box">
-          <i class="fa-solid fa-shield-halved"></i>
-          <h3>Cyber Security</h3>
-          <p>Protecting your business and data with advanced security solutions.</p>
+          <h3>Commercial Photography</h3>
+          <p>product shoots, real estate, food, fashion, or brand campaigns.</p>
         </div>
 
         <div class="service-box">
-          <i class="fa-solid fa-comments"></i>
-          <h3>IT Consultancy</h3>
-          <p>Professional advice to guide your business toward digital growth.</p>
+          <h3>Event Photography</h3>
+          <p>Weddings, birthdays, graduations, corporate events</p>
         </div>
 
         <div class="service-box">
-          <i class="fa-solid fa-cloud"></i>
-          <h3>Cloud Computing</h3>
+          <h3>Portrait Photography</h3>
           <p>Scalable and secure cloud solutions for seamless collaboration.</p>
         </div>
 
         <div class="service-box">
-          <i class="fa-solid fa-code"></i>
-          <h3>Software Development</h3>
-          <p>Custom software designed to fit your business needs perfectly.</p>
+          <h3>Lifestyle Photography</h3>
+          <p>Natural, candid shots that capture everyday moments.</p>
         </div>
 
       </div>
@@ -134,11 +130,12 @@
 
       <nav class="footer-nav">
          <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Copyright</a>
-        <a href="#">Privacy Policy</a>
+        <a href="#services">Services</a>
+        <a href="/copyright-privacy/copyright.html">Copyright</a>
+        <a href="/copyright-privacy/privacy.html">Privacy Policy</a>
       </nav>
-
+  
+       <section id="socialmedia">
       <div class="social-links">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -146,7 +143,7 @@
         <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
-
+      </section>
      
       <!-- 🌍 Location Section -->
       <div class="location">
@@ -168,13 +165,17 @@
     <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Contact form">
       <button class="modal-close" id="closeModal" aria-label="Close">×</button>
       <h3>Contact Me</h3>
-      <p class="muted">Tell me about your project. I’ll get back to you within 24 hours.</p>
+      <p class="muted">Tell me about your project. I’ll get back to you as soon as possible.</p>
       <form id="contactForm" action="https://formsubmit.co/moradeyovictor@gmail.com" method="POST" class="contact-form">
         <!-- formsubmit endpoint is an example; change to yours -->
         <input type="hidden" name="_subject" value="Portfolio Contact" />
         <label>
           Name
           <input required name="name" type="text" placeholder="Your name" />
+        </label>
+         <label>
+          Number
+          <input required name="number" type="number" placeholder="Your number" />
         </label>
         <label>
           Email
