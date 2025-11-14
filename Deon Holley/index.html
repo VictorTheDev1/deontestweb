@@ -48,6 +48,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#socialmedia">Social Media</a></li>
         </ul>
       </nav>
@@ -86,6 +87,7 @@
 
 
  <!-- FILTERS -->
+   <section id="projects">
 <section id="portfolio" class="portfolio-section container">
   <div class="filters">
     <button class="filter active" data-filter="all">All</button>
@@ -94,30 +96,25 @@
     <button class="filter" data-filter="wedding">Wedding</button>
     <button class="filter" data-filter="nature">Nature</button>
   </div>
-
   <!-- Masonry gallery using local images img1 - img20 -->
   <div id="gallery" class="gallery">
-    <div class="item" data-category="portrait"><img src="/images/img1.jpg" alt="Portrait 1"></div>
-    <div class="item" data-category="portrait"><img src="/images/img2.jpg" alt="Portrait 2"></div>
-    <div class="item" data-category="abstract"><img src="/images/img3.jpg" alt="Abstract 1"></div>
-    <div class="item" data-category="portrait"><img src="/images/img4.jpg" alt="Portrait 3"></div>
-    <div class="item" data-category="wedding"><img src="/images/img5.jpg" alt="Wedding 1"></div>
-    <div class="item" data-category="nature"><img src="/images/img6.jpg" alt="Nature 1"></div>
-    <div class="item" data-category="abstract"><img src="/images/img7.jpg" alt="Abstract 2"></div>
-    <div class="item" data-category="nature"><img src="/images/img8.jpg" alt="Nature 2"></div>
-    <div class="item" data-category="wedding"><img src="/images/img9.jpg" alt="Wedding 2"></div>
-    <div class="item" data-category="portrait"><img src="/images/img10.jpg" alt="Portrait 4"></div>
-    <div class="item" data-category="abstract"><img src="/images/img11.jpg" alt="Abstract 3"></div>
-    <div class="item" data-category="portrait"><img src="/images/img12.jpg" alt="Portrait 5"></div>
-    <div class="item" data-category="nature"><img src="/images/img13.jpg" alt="Nature 3"></div>
-    <div class="item" data-category="wedding"><img src="/images/img14.jpg" alt="Wedding 3"></div>
-    <div class="item" data-category="portrait"><img src="/images/img15.jpg" alt="Portrait 6"></div>
-    <div class="item" data-category="abstract"><img src="/images/img16.jpg" alt="Abstract 4"></div>
-    <div class="item" data-category="nature"><img src="/images/img17.jpg" alt="Nature 4"></div>
-    <div class="item" data-category="portrait"><img src="/images/img18.jpg" alt="Portrait 7"></div>
-    <div class="item" data-category="abstract"><img src="/images/img19.jpg" alt="Abstract 5"></div>
-    <div class="item" data-category="wedding"><img src="/images/img20.jpg" alt="Wedding 4"></div>
+    <div class="item" data-category="portrait"><img src="/images/img1.PNG" alt="Portrait 1"></div>
+    <div class="item" data-category="portrait"><img src="/images/img2.png" alt="Portrait 2"></div>
+    <div class="item" data-category="abstract"><img src="/images/img3.png" alt="Abstract 1"></div>
+    <div class="item" data-category="portrait"><img src="/images/img4.png" alt="Portrait 3"></div>
+    <div class="item" data-category="wedding"><img src="/images/img5.png" alt="Wedding 1"></div>
+    <div class="item" data-category="nature"><img src="/images/img6.png" alt="Nature 1"></div>
+    <div class="item" data-category="abstract"><img src="/images/img7.png" alt="Abstract 2"></div>
+    <div class="item" data-category="nature"><img src="/images/img8.png" alt="Nature 2"></div>
+    <div class="item" data-category="wedding"><img src="/images/img9.png" alt="Wedding 2"></div>
+    <div class="item" data-category="portrait"><img src="/images/img10.png" alt="Portrait 4"></div>
+    <div class="item" data-category="abstract"><img src="/images/img11.png" alt="Abstract 3"></div>
+    <div class="item" data-category="portrait"><img src="/images/img12.png" alt="Portrait 5"></div>
+    <div class="item" data-category="nature"><img src="/images/img13.png" alt="Nature 3"></div>
+    <div class="item" data-category="wedding"><img src="/images/img14.png" alt="Wedding 3"></div>
+    <div class="item" data-category="portrait"><img src="/images/img15.png" alt="Portrait 6"></div>
   </div>
+</section>
 </section>
 
 
@@ -167,14 +164,12 @@
   
        <section id="socialmedia">
       <div class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/holleywoodviews_?igsh=MTVkN3pnamVrNjNpeg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:holleydeon27@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+4439003461" aria-label="YouTube"><i class="fa fa-phone"></i></a>
       </div>
       </section>
-     
+
       <!-- 🌍 Location Section -->
       <div class="location">
        Baltimore, Maryland, USA
@@ -197,8 +192,10 @@
       <h3>Contact Me</h3>
       <p class="muted">Tell me about your project. I’ll get back to you as soon as possible.</p>
       <form id="contactForm" action="https://formsubmit.co/moradeyovictor@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_autoresponse" value="hey">
+        <input type="hidden" name="_captcha" value="false">
         <!-- formsubmit endpoint is an example; change to yours -->
-        <input type="hidden" name="_subject" value="Portfolio Contact" />
+        <input type="hidden" name="_subject" value="Portfolio Booking" />
         <label>
           Name
           <input required name="name" type="text" placeholder="Your name" />
