@@ -116,6 +116,7 @@ body{
   border-radius: 18px;
   transition: 0.35s ease;
   text-align: left;
+  border-color: #e6aa34;
   position: relative;
 }
 
