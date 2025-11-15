@@ -82,5 +82,63 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Initial layout: show all
-filterGallery('all');
+
+const form = document.getElementById("contactForm");
+const submitBtn = document.querySelector("#contactForm button[type='submit']");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // stop page reload
+
+    showLoading();
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData
+        });
+
+        hideLoading();
+
+        if (response.ok) {
+            showSuccess();
+            form.reset();
+        } else {
+            showError();
+        }
+
+    } catch (error) {
+        hideLoading();
+        showError();
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send Message";
+});
+
+/* SHOW LOADING */
+function showLoading() {
+    document.getElementById("loadingPopup").classList.add("show");
+}
+
+/* HIDE LOADING */
+function hideLoading() {
+    document.getElementById("loadingPopup").classList.remove("show");
+}
+
+/* SUCCESS */
+function showSuccess() {
+    const popup = document.getElementById("successPopup");
+    popup.classList.add("show");
+    setTimeout(() => popup.classList.remove("show"), 3000);
+}
+
+/* ERROR */
+function showError() {
+    const popup = document.getElementById("errorPopup");
+    popup.classList.add("show");
+    setTimeout(() => popup.classList.remove("show"), 3000);
+}
