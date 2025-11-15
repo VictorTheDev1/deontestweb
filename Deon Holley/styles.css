@@ -699,9 +699,8 @@ font-weight: 100;
 }
 .hello {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 400;
   color: white;
-  font-family: Arial, sans-serif;
   white-space: nowrap;
   overflow: hidden;
 }
