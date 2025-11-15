@@ -142,3 +142,30 @@ function showError() {
     popup.classList.add("show");
     setTimeout(() => popup.classList.remove("show"), 3000);
 }
+
+
+const texts = ["HELLO!", "YO!", "HI THERE!", "WELCOME!"]; 
+let index = 0;
+let charIndex = 0;
+let speed = 520;
+
+function typeEffect() {
+  const element = document.getElementById("typing");
+  
+  if (charIndex < texts[index].length) {
+    element.textContent += texts[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, speed);
+  } else {
+    setTimeout(() => {
+      element.textContent = "";
+      charIndex = 0;
+      index = (index + 1) % texts.length;
+      typeEffect();
+    }, 1000);
+  }
+}
+
+// start
+document.getElementById("typing").textContent = "";
+typeEffect();
